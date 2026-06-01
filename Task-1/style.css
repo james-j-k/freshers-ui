@@ -1,11 +1,22 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
-  margin: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 h1 {
   color: #333333;
+  margin-bottom: 20px;
 }
 
 input {
@@ -25,18 +36,39 @@ button {
   cursor: pointer;
 }
 
+ul {
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
 li {
   margin-top: 10px;
   font-size: 16px;
   list-style: none;
-  background-color: white;
+  background-color: #f9f9f9;
   padding: 10px;
   border-radius: 5px;
-  width: 350px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  width: 180px;
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
 }
 
 .edit-btn {
-  margin-left: 10px;
   background-color: orange;
   color: white;
   border: none;
@@ -45,8 +77,15 @@ li {
   cursor: pointer;
 }
 
+.edit-input {
+  width: 150px;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
 .delete-btn {
-  margin-left: 5px;
   background-color: red;
   color: white;
   border: none;
