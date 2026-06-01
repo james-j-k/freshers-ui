@@ -1,4 +1,5 @@
 function addTask() {
+
   var input = document.getElementById("taskInput");
   var task = input.value;
 
@@ -14,15 +15,33 @@ function addTask() {
   span.innerText = task;
   li.appendChild(span);
 
+  // button wrapper
+  var btnDiv = document.createElement("div");
+  btnDiv.className = "buttons";
+
   // edit button
   var editBtn = document.createElement("button");
   editBtn.innerText = "Edit";
   editBtn.className = "edit-btn";
   editBtn.onclick = function() {
-    var newTask = prompt("Edit your task", span.innerText);
-    if (newTask != null && newTask != "") {
-      span.innerText = newTask;
+
+    // replace span with input box
+    var editInput = document.createElement("input");
+    editInput.value = span.innerText;
+    editInput.className = "edit-input";
+    li.replaceChild(editInput, span);
+
+    // change edit button to save
+    editBtn.innerText = "Save";
+    editBtn.onclick = function() {
+      if (editInput.value != "") {
+        span.innerText = editInput.value;
+        li.replaceChild(span, editInput);
+        editBtn.innerText = "Edit";
+        editBtn.onclick = arguments.callee.caller;
+      }
     }
+
   }
 
   // delete button
@@ -33,8 +52,9 @@ function addTask() {
     list.removeChild(li);
   }
 
-  li.appendChild(editBtn);
-  li.appendChild(deleteBtn);
+  btnDiv.appendChild(editBtn);
+  btnDiv.appendChild(deleteBtn);
+  li.appendChild(btnDiv);
   list.appendChild(li);
 
   input.value = "";
