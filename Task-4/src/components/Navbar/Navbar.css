@@ -1,0 +1,126 @@
+﻿/* navbar styles */
+.navbar {
+  background-color: white;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+.navbar-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #242424;
+}
+
+/* tab buttons container */
+.nav-tabs {
+  display: flex;
+  background-color: #f4f6fb;
+  border-radius: 10px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.nav-tab {
+  padding: 6px 14px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #9095a0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* active tab */
+.nav-tab.active {
+  background-color: white;
+  color: #242424;
+  font-weight: bold;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+/* number badge on each tab */
+.tab-count {
+  background-color: #e8eaf2;
+  color: #9095a0;
+  font-size: 11px;
+  padding: 1px 7px;
+  border-radius: 20px;
+}
+
+.nav-tab.active .tab-count {
+  background-color: #6c63ff;
+  color: white;
+}
+
+/* sun / moon toggle */
+.theme-toggle {
+  cursor: pointer;
+}
+
+.toggle-track {
+  width: 52px;
+  height: 28px;
+  background-color: #f0f0f5;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  transition: background-color 0.3s;
+}
+
+/* moon side = dark */
+.toggle-track.dark {
+  background-color: #333333;
+  justify-content: flex-end;
+}
+
+.toggle-icon {
+  font-size: 18px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+/* ---- dark mode overrides ---- */
+.dark-mode .navbar {
+  background-color: #242424;
+  border-bottom-color: #333333;
+}
+
+.dark-mode .navbar-title {
+  color: white;
+}
+
+.dark-mode .nav-tabs {
+  background-color: #333333;
+}
+
+.dark-mode .nav-tab {
+  color: #888888;
+}
+
+.dark-mode .nav-tab.active {
+  background-color: #444444;
+  color: white;
+  box-shadow: none;
+}
+
+.dark-mode .nav-tab.active .tab-count {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.dark-mode .tab-count {
+  background-color: #444444;
+  color: #888888;
+}
+
