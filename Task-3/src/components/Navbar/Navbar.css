@@ -1,0 +1,59 @@
+/* navbar styles */
+.navbar {
+  background-color: white;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+.navbar-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1e1e2e;
+}
+
+/* tab buttons container */
+.nav-tabs {
+  display: flex;
+  background-color: #f4f6fb;
+  border-radius: 10px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.nav-tab {
+  padding: 6px 14px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #9095a0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* active tab */
+.nav-tab.active {
+  background-color: white;
+  color: #1e1e2e;
+  font-weight: bold;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+/* number badge on each tab */
+.tab-count {
+  background-color: #e8eaf2;
+  color: #9095a0;
+  font-size: 11px;
+  padding: 1px 7px;
+  border-radius: 20px;
+}
+
+.nav-tab.active .tab-count {
+  background-color: #6c63ff;
+  color: white;
+}

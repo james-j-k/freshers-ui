@@ -1,0 +1,75 @@
+/* stats row with 4 cards */
+.stats-bar {
+  display: flex;
+  gap: 12px;
+  padding: 16px 16px;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+.stat-card {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-number {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* different color for each card */
+.stat-total {
+  background-color: #f4f2ff;
+}
+
+.stat-total .stat-number {
+  color: #6c63ff;
+}
+
+.stat-total .stat-label {
+  color: #a89ff5;
+}
+
+.stat-inprogress {
+  background-color: #e0f2fe;
+}
+
+.stat-inprogress .stat-number {
+  color: #0284c7;
+}
+
+.stat-inprogress .stat-label {
+  color: #7dc4e8;
+}
+
+.stat-todo {
+  background-color: #fef9c3;
+}
+
+.stat-todo .stat-number {
+  color: #ca8a04;
+}
+
+.stat-todo .stat-label {
+  color: #e0b93a;
+}
+
+.stat-done {
+  background-color: #dcfce7;
+}
+
+.stat-done .stat-number {
+  color: #16a34a;
+}
+
+.stat-done .stat-label {
+  color: #6dd4a0;
+}

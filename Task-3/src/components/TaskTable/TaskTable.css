@@ -1,0 +1,57 @@
+/* scrollable area for tasks */
+.table-wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 500px;
+}
+
+/* thin scrollbar */
+.table-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #e0e0ea;
+  border-radius: 10px;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* table header */
+.task-table th {
+  text-align: left;
+  padding: 10px 16px;
+  font-size: 12px;
+  color: #b0b3be;
+  font-weight: bold;
+  border-bottom: 1px solid #f0f0f5;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+/* column widths */
+.task-table th:nth-child(1) { width: 90px; }
+.task-table th:nth-child(2) { width: auto; }
+.task-table th:nth-child(3) { width: 120px; }
+.task-table th:nth-child(4) { width: 130px; }
+
+/* no tasks message */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-text {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.empty-sub {
+  color: #c0c3cf;
+  font-size: 13px;
+}

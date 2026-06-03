@@ -1,0 +1,60 @@
+/* search and add task row */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ebebf0;
+  padding: 8px 14px;
+  border-radius: 10px;
+  width: 220px;
+  background-color: #f9f9fc;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  width: 100%;
+  color: #333;
+  background-color: transparent;
+}
+
+/* x button to clear search */
+.clear-search {
+  background-color: transparent;
+  border: none;
+  color: #c0c3cf;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-count-label {
+  font-size: 12px;
+  color: #b0b3be;
+}
+
+/* add task button */
+.add-btn {
+  padding: 8px 18px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
