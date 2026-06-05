@@ -1,0 +1,30 @@
+/* status dropdown badge */
+.status-select {
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+}
+
+/* blue for in progress */
+.status-select.status-inprogress {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+/* yellow for to do */
+.status-select.status-todo {
+  background-color: #fef9c3;
+  color: #ca8a04;
+}
+
+/* green for done */
+.status-select.status-done {
+  background-color: #dcfce7;
+  color: #16a34a;
+}

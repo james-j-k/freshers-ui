@@ -1,0 +1,82 @@
+﻿/* each task row */
+.task-row td {
+  padding: 14px 16px;
+  font-size: 13px;
+  border-bottom: 1px solid #f7f7fb;
+}
+
+.task-row:hover td {
+  background-color: #fafafd;
+}
+
+/* key column like TSK-01 */
+.task-key {
+  color: #6c63ff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.task-name {
+  color: #242424;
+  word-break: break-word;
+}
+
+/* strikethrough when task is done */
+.task-name.task-done {
+  text-decoration: line-through;
+  color: #b0b3be;
+}
+
+/* edit and delete buttons */
+.action-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.edit-btn {
+  padding: 5px 10px;
+  background-color: #f4f2ff;
+  color: #6c63ff;
+  border: none;
+  border-radius: 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #fff3f3;
+  color: #f87171;
+  border: none;
+  border-radius: 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* dark mode */
+.dark-mode .task-row td {
+  border-bottom-color: #333333;
+}
+
+.dark-mode .task-row:hover td {
+  background-color: #2e2e2e;
+}
+
+.dark-mode .task-name {
+  color: #e0e0f0;
+}
+
+.dark-mode .task-name.task-done {
+  color: #555555;
+}
+
+.dark-mode .edit-btn {
+  background-color: #333333;
+  color: #a89ff5;
+}
+
+.dark-mode .delete-btn {
+  background-color: #2e2e2e;
+  color: #f87171;
+}
+
